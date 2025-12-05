@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votação Suprema de Personagens</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Sistema Supremo de Votação de Personagens</h1>
+</header>
+
+<main>
+
+    <section class="cards-container">
+
+        <div class="card-personagem" data-id="gojo">
+            <img src="/Imagens/Gojo.jpg" alt="Gojo" height="500">
+            <h3>Satoru Gojo</h3>
+            <button class="btn-votar">Votar</button>
+        </div>
+
+        <div class="card-personagem" data-id="yuta">
+            <img src="/Imagens/Yuta.jpg" alt="Yuta" height="500">
+            <h3>Yuta Okkotsu</h3>
+            <button class="btn-votar">Votar</button>
+        </div>
+
+        <div class="card-personagem" data-id="toji">
+            <img src="/Imagens/Toji.jpg" alt="Toji" height="500">
+            <h3>Toji Fushiguro</h3>
+            <button class="btn-votar">Votar</button>
+        </div>
+
+        <div class="card-personagem" data-id="yuji">
+            <img src="/Imagens/Yuji.jpg" alt="Yuji" height="500">
+            <h3>Yuji Itadori</h3>
+            <button class="btn-votar">Votar</button>
+        </div>
+
+    </section>
+
+    <section class="ranking">
+        <h2>Ranking</h2>
+
+        <div class="piramide">
+            <div class="pos segundo"></div>
+            <div class="pos primeiro"></div>
+            <div class="pos terceiro"></div>
+        </div>
+
+        <ul id="restante-lista"></ul>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; Finch | O nerd supremo da votação</p>
+</footer>
+
+<script src="/JS/script.js"></script>
+</body>
+</html>
