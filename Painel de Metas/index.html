@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Painel de Metas</title>
+</head>
+<body>
+    <header> 
+        <h1>Painel de Metas diárias</h1>
+    </header>
+
+    <main>
+        <section>
+            <form id="formulario">
+                <label for="titulo">Título da Meta:</label>
+                <input type="text" id="titulo" placeholder="Insira o título" required>
+
+                <label for="descricao">Descrição da Meta</label>
+                <textarea id="descricao" name="descricao" placeholder="Insira a descrição de sua meta" required></textarea>
+
+                <label for="prioridade">Prioridade</label>
+                <select id="prioridade" required>
+                    <option value="baixa">Baixa</option>
+                    <option value="media">Média</option>
+                    <option value="alta">Alta</option>
+                </select>
+
+                <label for="data">Data da meta</label>
+                <input type="date" id="data" required>
+
+                <button type="submit" id="btn-adicionar">Adicionar</button>
+
+                <div id="erro"></div>
+            </form>
+        </section>
+
+        <section id="lista">
+            <ul id="lista-metas"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Fabiano Assunção Pereira | 17/11/2025</p>
+    </footer>
+
+    <script src="./JS/script.js"></script>
+</body>
+</html>
+
